@@ -1,8 +1,8 @@
 
 NVCC        = nvcc
-NVCC_FLAGS  = -O3 -I/usr/local/cuda/include -arch=sm_50
+NVCC_FLAGS  = -O3 -I/usr/local/cuda/include -arch=sm_52
 LD_FLAGS    = -lcudart -L/usr/local/cuda/lib64
-EXE	        = prefix-scan
+EXE	        = exclusive-scan
 OBJ	        = main.o support.o
 
 default: $(EXE)
